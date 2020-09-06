@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Contains drupal_cypress_twitter.module.
+ */
+
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function drupal_cypress_twitter_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the drupal_cypress_twitter module.
+    case 'help.page.drupal_cypress_twitter':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Drupal Cypress Twitter Example') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function drupal_cypress_twitter_entity_base_field_info(\Drupal\Core\Entity\EntityTypeInterface $entity_type) {
+
+  if ($entity_type->id() == 'user') {
+    $fields = array();
+    $fields['twitter'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Twitter'))
+      ->setSetting('max_length', 255)
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'string',
+        'weight' => -5
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -5
+      ])
+      ->setDisplayConfigurable('form', TRUE);
+    return $fields;
+  }
+}

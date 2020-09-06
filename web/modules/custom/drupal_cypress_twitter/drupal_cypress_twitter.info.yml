@@ -1,0 +1,5 @@
+name: 'drupal_cypress_twitter'
+type: module
+description: 'Drupal Cypress Twitter Example'
+core: 8.x
+package: 'Custom'
