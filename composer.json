@@ -19,7 +19,8 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
-        "drupal/cypress": "^1.0@beta"
+        "drupal/cypress": "^1.0@beta",
+        "weitzman/drupal-test-traits": "1.2"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -82,5 +83,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "behat/mink-selenium2-driver": "^1.4"
     }
 }
