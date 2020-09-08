@@ -24,6 +24,18 @@ function drupal_cypress_twitter_help($route_name, RouteMatchInterface $route_mat
   }
 }
 
+/***
+ * Implements hook_theme().
+ */
+function drupal_cypress_twitter_theme() {
+    return [
+      'country_link_formatter' => [
+        'variables' => ['name' => NULL],
+        'template' => 'country-link-formatter'
+      ]
+    ];
+}
+
 //function drupal_cypress_twitter_entity_base_field_info(\Drupal\Core\Entity\EntityTypeInterface $entity_type) {
 //
 //  if ($entity_type->id() == 'user') {
