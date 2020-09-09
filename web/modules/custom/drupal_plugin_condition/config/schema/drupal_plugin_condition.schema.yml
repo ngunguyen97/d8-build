@@ -1,0 +1,7 @@
+condition.plugin.sidebar_condition:
+  type: condition.plugin
+  label: 'Sidebar Block Condition condition'
+  mapping:
+    sidebarActive:
+      type: checkbox
+      label: sidebarActive

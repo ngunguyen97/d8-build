@@ -1,0 +1,7 @@
+name: Drupal plugin condition
+type: module
+description: Adds more condition into the article type.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+
