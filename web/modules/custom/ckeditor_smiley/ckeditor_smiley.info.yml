@@ -1,0 +1,8 @@
+name: Ckeditor Smiley
+type: module
+description: Add the Inster Smiley plugin to Ckeditor.
+package: CKEditor
+core: 8.x
+dependencies:
+  - ckeditor
+core_version_requirement: ^8 || ^9
