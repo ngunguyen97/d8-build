@@ -1,0 +1,33 @@
+uuid: 2db40655-0b15-43e2-b426-52f92b0d99e0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1b4da083-7807-4db3-9aa5-ad7d4fe42367'
+  module:
+    - block_content
+    - drupal_plugin_condition
+  theme:
+    - bartik
+id: testblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:1b4da083-7807-4db3-9aa5-ad7d4fe42367'
+settings:
+  id: 'block_content:1b4da083-7807-4db3-9aa5-ad7d4fe42367'
+  label: 'test block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  sidebar_condition:
+    id: sidebar_condition
+    age: 1
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    sidebarActive: 1

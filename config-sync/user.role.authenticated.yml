@@ -1,0 +1,19 @@
+uuid: 1df52077-ce98-47de-8418-2fd5808495f6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'

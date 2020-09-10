@@ -1,0 +1,23 @@
+uuid: 95b91262-fb0c-4be9-b83c-a74b50829ab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.article
+  module:
+    - drupal_cypress_twitter
+id: node.article.field_test
+field_name: field_test
+entity_type: node
+bundle: article
+label: Test
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: AF
+default_value_callback: ''
+settings: {  }
+field_type: country
