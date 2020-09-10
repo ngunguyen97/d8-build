@@ -8,3 +8,22 @@
  * This file is no longer required in Drupal 8.
  * @see https://www.drupal.org/node/2217931
  */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+
+/**
+ * Implements hook_field_info_alter().
+ *
+ * @param array $fields
+ * @param \EntityTypeInterface $entity_type
+ * @param $bundle
+ */
+
+function drupal_plugin_condition_entity_bundle_field_info_alter(array &$fields,EntityTypeInterface $entity_type, $bundle) {
+
+  if($entity_type->id() == 'node' && $bundle == 'article') {
+    if(isset($fields['field_integer'])) {
+      $fields['field_integer']->addConstraint('UniqueInteger', []);
+    }
+  }
+}
