@@ -1,0 +1,6 @@
+name: Celebrate
+type: module
+description: Custom filter to replece a celebrate token.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

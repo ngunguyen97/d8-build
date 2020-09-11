@@ -1,0 +1,7 @@
+filter_settings.filter_celebrate:
+  type: filter
+  label: 'Celebrate Filter filter'
+  mapping:
+    example:
+      type: string
+      label: Example
