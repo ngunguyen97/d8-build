@@ -1,0 +1,5 @@
+name: 'Example Batch Processing'
+type: module
+description: 'Provides an example of how to do custom batch'
+core: 8.x
+package: 'Custom'

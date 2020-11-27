@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains example_batch.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function example_batch_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the example_batch module.
+    case 'help.page.example_batch':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides an example of how to do custom batch') . '</p>';
+      return $output;
+
+    default:
+  }
+}

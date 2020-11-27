@@ -1,0 +1,15 @@
+example_batch.kick_off_batch_form:
+  path: '/example_batch'
+  defaults:
+    _form: '\Drupal\example_batch\Form\KickOffBatchForm'
+    _title: 'KickOffBatchForm'
+  requirements:
+    _access: 'TRUE'
+
+example_batch.kick_off_multi_step_batch_form:
+  path: '/example-multiple-step-batch'
+  defaults:
+    _form: '\Drupal\example_batch\Form\MultipleStepBatchForm'
+    _title: 'MultipleStepBatchForm'
+  requirements:
+    _access: 'TRUE'
